@@ -12,7 +12,19 @@
     <style>
         h3{color:red;}
         li{list-style:decimal;}
+        .boton-ejemplo{
+                border:none;
+                color:white;
+                padding:15px 32px;
+                text-align: center;
+                text-decoration:none;
+                display:inline-block;
+                font-size:16px;
+                margin:4px 2px;
+                cursor:pointer;
+        }
     </style>
+    
     <h1>Tipos de etiquetas</h1>
     <ul>
         <li>
@@ -64,22 +76,96 @@
 
             <li><h3> &lt;audio&gt; </h3>
             </li>
-            <p>Etiqueta <strong>audio</strong>Agrega controles de audio, reproducción<br>
-                Dentro de un &lt;
-                <strong>Sugerencia:</strong>Aside se coloca a menudo como una barra lateral en un documento.<br>
+            <p>Etiqueta <strong>audio</strong>Agrega controles de audio,como reproducción,pausa y volumen<br>
+                El<source> permite especificar archivos de audio alternativos entre los que puede elegir el navegador.
+            
                 Ejemplo:
                 <audio controls><source src="audio/teclado-mecanografia.mp3"type="audio/mpeg"</audio>
             </p>
             
             <li> <h3> &lt;button&gt; </h3>
             </li>
-            <p>Etiqueta <strong>button</strong>Define algún contenido<br>
-                además del contenido en el que se coloca, el contenido aparte debe estar indirectamente relacionado con el contenido circulante<br>
-                <strong>Sugerencia:</strong>Aside se coloca a menudo como una barra lateral en un documento.<br>
-                <strong>Nota:</strong>Este elemento no se muestra como algo especial en el navegador.Sin embargo puede usar CSS para diseñar el aside
+            <p>Etiqueta <strong>button</strong>Define un botón en el que se puede hacer click,<br>
+               Dentro de un &lt;button&gt; puedes poner texto(y etiquetas como <i>,<h>,<strong>,<img>,etc.)<br>
+                Eso no es posible con un botón creado con el &lt;input&gt; <br>
+                <strong>Sugerencia:<strong>Especifique siempre el type de un &lt;button&gt;, para indicar a los navegadores que tipo de botón es.<br>
+                <strong>Consejo: Puede diseñar botones facilmente con CSSS</strong> <br>
+                Ejemplo:   
             </p>
-            <a href= "example/aside.html">Ejemplo aside con CSS</a>
-    
+            <button class="boton-ejemplo" style="background-color:#4CAF50"> boton 1</button>
+            <button class="boton-ejemplo" style="background-color: #008CBA">boton2</button>
+
+            <li> <h3> &lt;form&gt; </h3>
+            </li>
+            <p>Etiqueta <strong>form</strong>Es un contenedor para diferentes tipos de elementos de entrada<br>
+            como :campos de texto, casillas de verificación, botones de opción, botones de envío,etc.<br>
+            </p>
+
+            <input type="text" placeholder="Hola">
+            <p>Muestra un campo de entrada de texto de una sola linea</p>
+
+            <input name="a" type="radio">
+            <input name="a" type="radio">
+            <input name="a" type="radio">
+            <p>Muestra un botón de radio para seleccionar una de muchas opciones)</p>
+
+            <input name="b" type="checkbox">
+            <input name="b" type="checkbox">
+            <p>Muestra una casilla de verificación (para seleccionar cero o más opcioness)</p>
+
+            <input type="submit">
+            <p>Muestra un botón de envío (para enviar el formulario)</p>
+
+            <input type="button">
+            <p>Muestra un botón en el que se puede hacer click</p>
+
+
+            <li> <h3> &lt;footer&gt; </h3>
+            </li>
+            <p>Etiqueta <strong>footer</strong>Define un pie de página para un documento o sección<br>
+             <li style="list-style:disc">Normalmente contiene:</li>
+             <li style="list-style:disc">Información de autoria</li>
+             <li style="list-style:disc">Información de registro</li>
+             <li style="list-style:disc">Información de contacto</li>
+             <li style="list-style:disc">Mapa del sitio</li>
+             <li style="list-style:disc">Volver a los enlaces superiores</li>
+             <li style="list-style:disc">Documentos relacionados</li>
+                
+            </p>
+            <a href= "example/footer.html">Ejemplo footer</a>
+
+
+            <li> <h3> &lt;header&gt; </h3>
+            </li>
+            <p>Etiqueta <strong>header</strong>Representa un contenedor de contenido introductorio<br>
+             o un conjunto de enlaces de navegación.
+             Normalmente contiene:
+             <li style="list-style:disc">Uno o más elementos de encabezado (&lt;h1&gt;-&lt;h6&gt;)</li>
+             <li style="list-style:disc">Logotipo o icono</li>
+             <li style="list-style:disc">Información de autoría</li>
+             <strong>Nota:</strong>Puede tener varios &lt;header&gt;en un documento HTML.Sin embargo,<br>
+             no se puede colocar dentro de un &lt;footer&gt;,&lt;address&gt; u otro &lt;header&gt;<br>
+             Ejemplo:
+             <h2>Encabezado de la página principal aquí</h2>
+             <h5>Publicado el 18 de agosto de 2022</h5>
+            </p>
+
+            
+
+
+
+
+
+
+
+
+            
+
+            
+
+            
+
+            
     
 
 
