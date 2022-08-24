@@ -10,245 +10,292 @@
 
 <body>
     <style>
-        h3{color:red;}
-        li{list-style:decimal;}
-        .boton-ejemplo{
-                border:none;
-                color:white;
-                padding:15px 32px;
-                text-align: center;
-                text-decoration:none;
-                display:inline-block;
-                font-size:16px;
-                margin:4px 2px;
-                cursor:pointer;
+        h3 {
+            color: blue;
+        }
+
+        li {
+            list-style: decimal;
+        }
+
+        .boton-ejemplo {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
         }
     </style>
-    
+
     <h1>Tipos de etiquetas</h1>
+    <p>Existen otros tipos dde etiquetas para crear una página web en HTML<br>
+        que nos permiten encuadrar otros elementos dentro de las páginas web.<br>
+        Algunas de las más usadas son:</p>
     <ul>
         <li>
             <h3> &lt;a&gt; </h3>
         </li>
-        <p>Etiqueta <strong>ancla</strong> Sirve para colocar<br>
-            un URL de alguna pagina a un documento</p>
-        <a class="boton-ejemplo" href="https://www.google.com/">Soy un link</a>
+        <p>
+            Etiqueta <strong>ancla</strong> Sirve para colocar<br>
+            un URL de alguna pagina a un documento<br>
+            Ejemplo:
+        </p>
+        <a href="https://www.google.com/">Soy un link</a>
+
 
         <li>
             <h3> &lt;abbr&gt; </h3>
         </li>
         <p>Etiqueta <strong>abbr</strong> Sirve para asignar<br>
-            una abreviatura</p>
-        <abbr title="lenguaje de hipertexto"> HTML</abbr>
+            una abreviatura<br>
+        Ejemplo:
+        </p>
+        <abbr title="lenguaje de hipertexto">Yo hago HTML</abbr>
 
         <li>
             <h3> &lt;address&gt; </h3>
         </li>
         <p>Etiqueta <strong>address</strong> Define la información de contacto del autor/propietario<br>
-            de un documento u artículo</p>
-        <address>Escrito por <a href="">Alfonso6z</a></address>
+            de un documento u artículo.<br>
+        Ejemplo:
+        </p>
+        <address>Escrito por <a href="">yomeritacode</address>
 
         <li>
             <h3> &lt;article&gt; </h3>
         </li>
-        <p>Etiqueta <strong>article</strong> Un atículo debe tener sentido por sí mismo<br>
+        <p>Etiqueta <strong>article</strong> Un artículo debe tener sentido por sí mismo<br>
             y debe ser posible distribuirlo independientemente del resto del sitio.<br>
-        Fuentes potenciales para el elemento article:<br>
-                Publicación en el foro<br>
-                Entrada en el blog<br>
-                Noticia<br>
-                Nota:<strong>&lt;article&gt;</strong>no se muestra como algo especial en el navegador<br>
-                Sin embargo,puede usar CSS para darle diseño.
-            </p>
-            <a href="example/article.html">Ejemplo article con css</a>
+            Fuentes potenciales para el elemento article:<br>
+            
+            <li style="list-style:disc">Publicación en el foro</li><br>
+            <li style="list-style:disc">Entrada en el blog</li><br>
+            <li style="list-style:disc">Noticia</li><br>
 
-        
-           <li> <h3> &lt;aside&gt; </h3>
-        </li>
-        <p>Etiqueta <strong>aside</strong>Define algún contenido<br>
-            además del contenido en el que se coloca, el contenido aparte debe estar indirectamente relacionado con el contenido circulante<br>
-            <strong>Sugerencia:</strong>Aside se coloca a menudo como una barra lateral en un documento.<br>
-            <strong>Nota:</strong>Este elemento no se muestra como algo especial en el navegador.Sin embargo puede usar CSS para diseñar el aside
+            Nota:<strong>&lt;article&gt;</strong>no se muestra como algo especial en el navegador<br>
+            Sin embargo,puede usar CSS para darle diseño.<br>
+            Ejemplo:
         </p>
-        <a href= "example/aside.html">Ejemplo aside con CSS</a>
+        <a href="example/article.html">Ejemplo article con css</a>
+
+
+        <li>
+            <h3> &lt;aside&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>aside</strong> Define algún contenido<br>
+            además del contenido en el que se coloca, el contenido aparte debe estar indirectamente relacionado con el
+            contenido circulante<br>
+            <strong>Sugerencia:</strong>Aside se coloca a menudo como una barra lateral en un documento.<br>
+            <strong>Nota:</strong>Este elemento no se muestra como algo especial en el navegador.Sin embargo puede usar
+            CSS para diseñar el aside.<br>
+            Ejemplo:
+        </p>
+        <a href="example/aside.html">Ejemplo aside con CSS</a>
 
 
 
-            <li><h3> &lt;audio&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>audio</strong>Agrega controles de audio,como reproducción,pausa y volumen<br>
-                El<source> permite especificar archivos de audio alternativos entre los que puede elegir el navegador.
-            
-                Ejemplo:
-                <audio controls><source src="audio/teclado-mecanografia.mp3"type="audio/mpeg"</audio>
-            </p>
-            
-            <li> <h3> &lt;button&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>button</strong>Define un botón en el que se puede hacer click,<br>
-               Dentro de un &lt;button&gt; puedes poner texto(y etiquetas como <i>,<h>,<strong>,<img>,etc.)<br>
-                Eso no es posible con un botón creado con el &lt;input&gt; <br>
-                <strong>Sugerencia:<strong>Especifique siempre el type de un &lt;button&gt;, para indicar a los navegadores que tipo de botón es.<br>
-                <strong>Consejo: Puede diseñar botones facilmente con CSSS</strong> <br>
-                Ejemplo:   
-            </p>
-            <button class="boton-ejemplo" style="background-color:#4CAF50"> boton 1</button>
-            <button class="boton-ejemplo" style="background-color: #008CBA">boton2</button>
+        <li>
+            <h3> &lt;audio&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>audio</strong> Agrega controles de audio,como reproducción,pausa y volumen<br>
+            El &lt;source&gt; permite especificar archivos de audio alternativos entre los que puede elegir el navegador.<br>
 
-            <li> <h3> &lt;form&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>form</strong>Es un contenedor para diferentes tipos de elementos de entrada<br>
-            como :campos de texto, casillas de verificación, botones de opción, botones de envío,etc.<br>
-            </p>
-
-            <input type="text" placeholder="Hola">
-            <p>Muestra un campo de entrada de texto de una sola linea</p>
-
-            <input name="a" type="radio">
-            <input name="a" type="radio">
-            <input name="a" type="radio">
-            <p>Muestra un botón de radio para seleccionar una de muchas opciones)</p>
-
-            <input name="b" type="checkbox">
-            <input name="b" type="checkbox">
-            <p>Muestra una casilla de verificación (para seleccionar cero o más opcioness)</p>
-
-            <input type="submit">
-            <p>Muestra un botón de envío (para enviar el formulario)</p>
-
-            <input type="button">
-            <p>Muestra un botón en el que se puede hacer click</p>
+            Ejemplo:<br>
+            <audio controls><source src="audio/teclado-mecanografia.mp3" type="audio/mpeg" </audio>
+        </p>
 
 
-            <li> <h3> &lt;footer&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>footer</strong>Define un pie de página para un documento o sección<br>
-             <li style="list-style:disc">Normalmente contiene:</li>
-             <li style="list-style:disc">Información de autoria</li>
-             <li style="list-style:disc">Información de registro</li>
-             <li style="list-style:disc">Información de contacto</li>
-             <li style="list-style:disc">Mapa del sitio</li>
-             <li style="list-style:disc">Volver a los enlaces superiores</li>
-             <li style="list-style:disc">Documentos relacionados</li>
-                
-            </p>
-            <a href= "example/footer.html">Ejemplo footer</a>
+        <li>
+            <h3> &lt;button&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>button</strong> Define un botón en el que se puede hacer click,<br>
+           Dentro de un &lt;button&gt; puedes poner texto(y etiquetas como <i>,<h>,<strong>,<img>,etc.)<br>
+           Eso no es posible con un botón creado con el &lt;input&gt; <br>
+        <strong>Sugerencia:<strong> Especifique siempre el type de un &lt;button&gt;, para indicar a los
+           navegadores que tipo de botón es.<br>
+        <strong>Consejo: Puede diseñar botones facilmente con CSSS</strong> <br>
+           Ejemplo:
+        </p>
+        <button class="boton-ejemplo" style="background-color:#4CAF50"> boton 1</button>
+        <button class="boton-ejemplo" style="background-color: #008CBA">boton2</button>
 
 
-            <li> <h3> &lt;header&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>header</strong> Representa un contenedor de contenido introductorio<br>
-             o un conjunto de enlaces de navegación.
-             Normalmente contiene:
-             <li style="list-style:disc">Uno o más elementos de encabezado (&lt;h1&gt;-&lt;h6&gt;)</li>
-             <li style="list-style:disc">Logotipo o icono</li>
-             <li style="list-style:disc">Información de autoría</li>
-             <strong>Nota:</strong>Puede tener varios &lt;header&gt;en un documento HTML.Sin embargo,<br>
-             no se puede colocar dentro de un &lt;footer&gt;,&lt;address&gt; u otro &lt;header&gt;<br>
-             Ejemplo:
-             <h2>Encabezado de la página principal aquí</h2>
-             <h5>Publicado el 18 de agosto de 2022</h5>
-            </p>
+        <li>
+            <h3> &lt;form&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>form</strong> Es un contenedor para diferentes tipos de elementos de entrada<br>
+           como :campos de texto, casillas de verificación, botones de opción, botones de envío,etc.<br>
+        </p>
+
+        <input type="text" placeholder="Hola">
+        <p>Muestra un campo de entrada de texto de una sola linea</p>
+
+        <input name="a" type="radio">
+        <input name="a" type="radio">
+        <input name="a" type="radio">
+        <p>Muestra un botón de radio para seleccionar una de muchas opciones)</p>
+
+        <input name="b" type="checkbox">
+        <input name="b" type="checkbox">
+        <p>Muestra una casilla de verificación (para seleccionar cero o más opcioness)</p>
+
+        <input type="submit">
+        <p>Muestra un botón de envío (para enviar el formulario)</p>
+
+        <input type="button">
+        <p>Muestra un botón en el que se puede hacer click</p>
 
 
-            <li> <h3> &lt;hgroup&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>hgroup</strong> Generalmente se usa para agrupar un conjunto de uno o más elementos &lt;h1&gt;-&lt;h6&gt;<br>
-             para agrupar, por ejemplo, un título de sección y un subtítulo adjunto.
-             Ejemplo. <hgroup>Ejemplo</hgroup>
-            </p>
+        <li>
+            <h3> &lt;footer&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>footer</strong> Define un pie de página para un documento o sección<br>
+            <li style="list-style:disc">Normalmente contiene:</li>
+            <li style="list-style:disc">Información de autoria</li>
+            <li style="list-style:disc">Información de registro</li>
+            <li style="list-style:disc">Información de contacto</li>
+            <li style="list-style:disc">Mapa del sitio</li>
+            <li style="list-style:disc">Volver a los enlaces superiores</li>
+            <li style="list-style:disc">Documentos relacionados</li>
+
+        </p>
+        <a href="example/footer.html">Ejemplo footer</a>
 
 
-            <li> <h3> &lt;h1&gt;-&lt;h6&gt; </h3>
-            </li>
-            <p>Etiqueta <strong>&lt;h1&gt;-&lt;h6&gt;</strong> Se utiliza para definir encabezados HTML<br>
-             Ejemplo:
-             <h1>Hola Mundo</h1>
-             <h6>Hola Mundo</h6>
-            </p>
+        <li>
+            <h3> &lt;header&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>header</strong> Representa un contenedor de contenido introductorio<br>
+            o un conjunto de enlaces de navegación.
+            Normalmente contiene:
+            <li style="list-style:disc">Uno o más elementos de encabezado (&lt;h1&gt;-&lt;h6&gt;)</li>
+            <li style="list-style:disc">Logotipo o icono</li>
+            <li style="list-style:disc">Información de autoría</li>
+            <strong>Nota:</strong>Puede tener varios &lt;header&gt;en un documento HTML.Sin embargo,<br>
+            no se puede colocar dentro de un &lt;footer&gt;,&lt;address&gt; u otro &lt;header&gt;<br>
+            Ejemplo:
+        <h2>Encabezado de la página principal aquí</h2>
+        <h5>Publicado el 18 de agosto de 2022</h5>
+        </p>
 
-            <li> <h3>img</h3>
-            </li>
-            <p>Etiqueta <strong>imagen</strong> Se utiliza para incrustar una imagen en una página HTML<br>
-             Técnicamente las imágenes no se insertan en una página web, las imágenes están vínculadas a páginas web.<br>
-             La etiqueta &lt;ima&gt; crea un espacio de espera para la imagen de referencia.
-             Tiene atributos obligatorios:
-             <li style="list-style:disc">src: Especifica la ruta a la imagen</li>
-             <li style="list-style:disc">alt: Especifica un texto alternativo para la imagen si por algún motivo no se puede mostrar</li>   
-             Ejemplo <img src="https://cf.ltkcdn.net/gatos/images/std/236641-800x515r1-etapas-desarrollo-gatitos.jpg" alt="gatito">
-            </p>
- 
 
-            <li> <h3>map</h3>
-            </li>
-            <p>Etiqueta <strong>map</strong> Se utiliza para definir un mapa de imagen<br>
-             es una imagen con áreas en las que se puede hacer click.El atributo de nombre requerido está asociado<br>
-             El atributo de nombre requerido del &lt;map&gt;está asociado con el atributo usemap de &lt;img&gt;<br>
-             y crea una relación entre la imagen y el mapa.
-                
-             Ejemplo <map></map>
-            </p>
- 
-            <li> <h3>nav</h3>
-            </li>
-            <p>Etiqueta <strong>nav</strong> Define un conjunto de enlaces de navegación<br>
-             Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un &lt;nav&gt;<br>
-             Este elemento está destinado solo para el bloque principal de enlaces de navegación.<br>
-            
-             Ejemplo <nav></nav>
-            </p>
+        <li>
+            <h3> &lt;hgroup&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>hgroup</strong> Generalmente se usa para agrupar un conjunto de uno o más elementos
+            &lt;h1&gt;-&lt;h6&gt;<br>
+            para agrupar, por ejemplo, un título de sección y un subtítulo adjunto.
+            Ejemplo:<p/>
+             <hgroup><h1>Etiquetas HTML</h1>
+                             <h2>Ejemplo de hgroup</h2>
+                     </hgroup>
+        
 
-            <li> <h3>p</h3>
-            </li>
-            <p>Etiqueta <strong>p</strong> Define un párrafo<br>
+        <li>
+            <h3> &lt;h1&gt; - &lt;h6&gt; </h3>
+        </li>
+        <p>Etiqueta <strong>&lt;h1&gt; - &lt;h6&gt;</strong> Se utiliza para definir encabezados HTML<br>
+            Ejemplo:<p/>
+
+        <h1>Hola Mundo</h1>
+        <h6>Hola Mundo</h6>
+        
+
+        <li>
+            <h3>&lt;img&gt;</h3>
+        </li>
+        <p>Etiqueta <strong>imagen</strong> Se utiliza para incrustar una imagen en una página HTML<br>
+            Técnicamente las imágenes no se insertan en una página web, las imágenes están vínculadas a páginas web.<br>
+            La etiqueta &lt;img&gt; crea un espacio de espera para la imagen de referencia.
+            Tiene atributos obligatorios:
+            <li style="list-style:disc">src: Especifica la ruta a la imagen</li>
+            <li style="list-style:disc">alt: Especifica un texto alternativo para la imagen si por algún motivo no se
+                puede mostrar</li>
+            Ejemplo:<br>
+            <p/>
+             <img src="https://cf.ltkcdn.net/gatos/images/std/236641-800x515r1-etapas-desarrollo-gatitos.jpg"
+                alt="gatito">
+        
+
+        <li>
+            <h3>map</h3>
+        </li>
+        <p>Etiqueta <strong>map</strong> Se utiliza para definir un mapa de imagen<br>
+            es una imagen con áreas en las que se puede hacer click.El atributo de nombre requerido está asociado<br>
+            El atributo de nombre requerido del &lt;map&gt;está asociado con el atributo usemap de &lt;img&gt;<br>
+            y crea una relación entre la imagen y el mapa.<br>
+            Ejemplo:
+        </p>
+            <map a=""></map>
+        
+
+        <li>
+            <h3>nav</h3>
+        </li>
+        <p>Etiqueta <strong>nav</strong> Define un conjunto de enlaces de navegación<br>
+            Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un &lt;nav&gt;<br>
+            Este elemento está destinado solo para el bloque principal de enlaces de navegación.<br>
+
+            Ejemplo
+        <nav></nav>
+        </p>
+
+        <li>
+            <h3>p</h3>
+        </li>
+        <p>Etiqueta <strong>p</strong> Define un párrafo<br>
             Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt;p&gt;
-            
-             Ejemplo <p>Este es un párrafo</p>
-             
-            </p>
- 
 
-            <li> <h3>script</h3>
-            </li>
-            <p>Etiqueta <strong>script</strong> Se utiliza para incrustar un script del ladodel cliente JavaScript<br>
+            Ejemplo
+        <p>Este es un párrafo</p>
+
+        </p>
+
+
+        <li>
+            <h3>script</h3>
+        </li>
+        <p>Etiqueta <strong>script</strong> Se utiliza para incrustar un script del ladodel cliente JavaScript<br>
             Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos externos<br>
             a través del atributo <strong>src</strong>.<br>
-            Los usos más comunes de JavaScript son manipulación de imágenes, la validación de formularios y los cambios dinámicos de contenido.<br>
+            Los usos más comunes de JavaScript son manipulación de imágenes, la validación de formularios y los cambios
+            dinámicos de contenido.<br>
             <strong>Nota:</strong>Cuando un navegador lee una hoja de estilo formateará el documento HTML<br>
-            de acuerdo con la información de la hoja de estilo.Si se han definido algunas propiedades para el mismo slector<br>
-            (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída(consulte el ejemplo a continuación.)<br>
-            
-             Ejemplo <script></script>
-             
-            </p>
+            de acuerdo con la información de la hoja de estilo.Si se han definido algunas propiedades para el mismo
+            slector<br>
+            (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída(consulte
+            el ejemplo a continuación.)<br>
+
+            Ejemplo:
+            <script></script>
+
+        </p>
 
 
-            <li> <h3>style</h3>
-            </li>
-            <p>Etiqueta <strong>style</strong> Se utiliza para definir la información de estilo CSS de un documento<br>
-                Dentro de &lt;style&gt;, especifica cómo deben mostrare los elementos HTML en un navegador.
-            
-             Ejemplo <style></style>
-             
-            </p>
- 
+        <li>
+            <h3>style</h3>
+        </li>
+        <p>Etiqueta <strong>style</strong> Se utiliza para definir la información de estilo CSS de un documento<br>
+            Dentro de &lt;style&gt;, especifica cómo deben mostrare los elementos HTML en un navegador.
 
-            <li> <h3>section</h3>
-            </li>
-            <p>Etiqueta <strong>section</strong> Define una sección en un documento.<br>
-            
-             Ejemplo <section></section>
-             
-            </p>
- 
+            Ejemplo <style></style>
 
- 
+        </p>
 
 
+        <li>
+            <h3>section</h3>
+        </li>
+        <p>Etiqueta <strong>section</strong> Define una sección en un documento.<br>
 
+            Ejemplo
+        <section></section>
 
-
-            
+        </p>
 
 
 
@@ -257,14 +304,23 @@
 
 
 
-            
 
-            
 
-            
 
-            
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
