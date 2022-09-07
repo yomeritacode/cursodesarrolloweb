@@ -10,11 +10,21 @@
     border-radius: 50px;
     border:solid  2px black;
 }
-button:hover {
+.button:hover {
     background-color:black;
     border:solid  2px white;
     color: white;
 }
+
+.boton_2{
+        background-color:#D40032 ;
+        padding: 15px 32px; 
+        text-align: center;
+        text-decoration:none;
+        border-radius: 50px;
+        border:solid 2px white;
+        color: white;
+    }
 
 .a {
     color:black;
@@ -27,19 +37,32 @@ button:hover {
     text-decoration:none;
 }
 
-.section {
-    background-color: green;
-    margin:auto;
-    text-align: center;
+section {
+    background-color:#D40032 ;
+    display: flex;
     font-size: 20px;
     color: white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family:cambria;
 }
 
-.section_Pink {
-        background-color: fuchsia;
-        margin:auto;
-        text-align: center;
-        font-size: 20px;
-        color: white;
+.section-verde {
+    background-color:#016241;
+    padding-top: 80px;
+    padding-bottom: 80px
+    display: inherit;
+    font-family: Cambria;
+}
+
+.textos{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    width: 25 px;
+    height: 25px;
+    margin: auto;
 
 }
