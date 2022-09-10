@@ -24,7 +24,16 @@
         border-radius: 50px;
         border:solid 2px white;
         color: white;
+        cursor:pointer;
     }
+
+.boton_2:hover{
+    background-color: white;
+    color:#D40032;  
+    font-weight: bold;
+
+
+}
 
 .a {
     color:black;
